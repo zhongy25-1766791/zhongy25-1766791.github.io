@@ -3,21 +3,45 @@
 	<head>
 	<title> Angela's Awesome Website </title>
 	</head>
-	<style>
+	
+<body>
+	<p> This is the dotted margin! Below this is a photo with 20 pixel margins on each side. </p>
+	
+	<img src="1.jpg" height="300" width="400" >
+	
+<style>
 	p {
-    text-indent: 50px;
-    text-align: center;
-    letter-spacing: 1px;}
+    text-indent: 100px;
+    position: relative; 
+    letter-spacing: 1px;
+    color: black}
     p {border-style: dotted;}
-	</style>
-	<p> This is a picture of a cartoon </p>
-	<style>
-	div {
-    width: 200px;
-    height: 50px;
-    background-color: #eee;
-    overflow: visible;}
-    </style>
-    	<img src="g.jpg" height="400" width="400" >
-    </html>
+
+    img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;}
+    
+    .container {
+    position: relative;
+    text-align: center;
+    color: white;}
+
+	.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);}
+    
+</style>
+
+<div class="container">
+	<img src="g.jpg" alt="Norway" style="width:50%;">
+	<div class="centered">Look Here! This is the center!</div>
+</div>
+	
+</body>
+	
+</html>
 	
